@@ -3,7 +3,7 @@
 A modern, secure, and feature-rich marketplace built with **React.js**, **Supabase**, **TypeScript**, and **Tailwind CSS**.  
 Users can browse and buy products, while authenticated users can list products for sale easily.
 
--
+
 
 ## 🚀 Features
 
