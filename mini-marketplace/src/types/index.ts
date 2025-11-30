@@ -17,12 +17,76 @@ export interface Database {
                     email: string;
                 };
                 Update: Partial<Omit<Profile, 'id' | 'created_at'>>;
+                Relationships: [];
             };
             products: {
                 Row: Product;
                 Insert: Omit<Product, 'id' | 'created_at' | 'updated_at'>;
                 Update: Partial<Omit<Product, 'id' | 'user_id' | 'created_at'>>;
+                Relationships: [
+                    {
+                        foreignKeyName: "products_user_id_fkey";
+                        columns: ["user_id"];
+                        isOneToOne: false;
+                        referencedRelation: "profiles";
+                        referencedColumns: ["id"];
+                    }
+                ];
             };
+            cart_items: {
+                Row: CartItem;
+                Insert: Omit<CartItem, 'id' | 'created_at' | 'updated_at'>;
+                Update: Partial<Omit<CartItem, 'id' | 'user_id' | 'created_at'>>;
+                Relationships: [
+                    {
+                        foreignKeyName: "cart_items_product_id_fkey";
+                        columns: ["product_id"];
+                        isOneToOne: false;
+                        referencedRelation: "products";
+                        referencedColumns: ["id"];
+                    },
+                    {
+                        foreignKeyName: "cart_items_user_id_fkey";
+                        columns: ["user_id"];
+                        isOneToOne: false;
+                        referencedRelation: "profiles";
+                        referencedColumns: ["id"];
+                    }
+                ];
+            };
+            wishlist_items: {
+                Row: WishlistItem;
+                Insert: Omit<WishlistItem, 'id' | 'created_at'>;
+                Update: Partial<Omit<WishlistItem, 'id' | 'user_id' | 'created_at'>>;
+                Relationships: [
+                    {
+                        foreignKeyName: "wishlist_items_product_id_fkey";
+                        columns: ["product_id"];
+                        isOneToOne: false;
+                        referencedRelation: "products";
+                        referencedColumns: ["id"];
+                    },
+                    {
+                        foreignKeyName: "wishlist_items_user_id_fkey";
+                        columns: ["user_id"];
+                        isOneToOne: false;
+                        referencedRelation: "profiles";
+                        referencedColumns: ["id"];
+                    }
+                ];
+            };
+        };
+        Views: {
+            [_ in never]: never;
+        };
+        Functions: {
+            [_ in never]: never;
+        };
+        Enums: {
+            [_ in never]: never;
+        };
+        CompositeTypes: {
+            [_ in never]: never;
         };
     };
 }
@@ -114,7 +178,6 @@ export interface CartItem {
     quantity: number;
     created_at: string;
     updated_at: string;
-    product?: Product;
 }
 
 /**
@@ -132,7 +195,6 @@ export interface WishlistItem {
     user_id: string;
     product_id: string;
     created_at: string;
-    product?: Product;
 }
 
 /**
