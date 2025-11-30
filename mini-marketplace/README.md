@@ -2,7 +2,6 @@
 
 A modern, feature-rich e-commerce platform built with **React**, **TypeScript**, and **Supabase**. This application allows users to browse products, manage a shopping cart and wishlist, and connect directly with sellers.
 
-![Mini-Marketplace Banner](https://images.unsplash.com/photo-1472851294608-415105094e3f?q=80&w=2070&auto=format&fit=crop)
 
 ## 🚀 Features
 
