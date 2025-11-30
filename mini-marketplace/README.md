@@ -2,6 +2,8 @@
 
 A modern, feature-rich e-commerce platform built with **React**, **TypeScript**, and **Supabase**. This application allows users to browse products, manage a shopping cart and wishlist, and connect directly with sellers.
 
+🌐 Live Hosted Link
+https://circle-git-main-atharv-kulkarnis-projects-84297291.vercel.app?_vercel_share=WIycvgw6Oqt1qChW1fW8FVFNQbRSTV9o
 
 ## 🚀 Features
 
