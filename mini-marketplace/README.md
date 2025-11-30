@@ -2,19 +2,6 @@
 
 A modern, feature-rich e-commerce platform built with **React**, **TypeScript**, and **Supabase**. This application allows users to browse products, manage a shopping cart and wishlist, and connect directly with sellers.
 
-![Mini-Marketplace Banner](https://images.unsplash.com/photo-1472851294608-415105094e3f?q=80&w=2070&auto=format&fit=crop)
-
-## 📸 Screenshots
-
-| Home Page | Product Details |
-|:---:|:---:|
-| ![Home Page](docs/screenshots/home.png) | ![Product Details](docs/screenshots/product-modal.png) |
-| **Browse Products** | **View Details & Buy** |
-
-| Shopping Cart | Wishlist |
-|:---:|:---:|
-| ![Shopping Cart](docs/screenshots/cart.png) | ![Wishlist](docs/screenshots/wishlist.png) |
-| **Manage Cart Items** | **Save Favorites** |
 
 ## 🚀 Features
 
