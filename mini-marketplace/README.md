@@ -3,17 +3,7 @@
 A modern, secure, and feature-rich marketplace built with **React.js**, **Supabase**, **TypeScript**, and **Tailwind CSS**.  
 Users can browse and buy products, while authenticated users can list products for sale easily.
 
----
-
-## 📸 Screenshots
-
-### 🏠 Home Page
-![Home Page]([https://raw.githubusercontent.com/Kulkarni-Atharv/mini-marketplace/main/docs/screenshots/home.png](https://github.com/Kulkarni-Atharv/Circle/blob/main/mini-marketplace/docs/screenshots/homePage))
-
-### 🛒 Product Modal / Details
-![Product Modal](https://raw.githubusercontent.com/Kulkarni-Atharv/mini-marketplace/main/docs/screenshots/product-modal.png)
-
----
+-
 
 ## 🚀 Features
 
